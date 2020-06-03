@@ -33,7 +33,7 @@ class HelloWorldControllerTest {
 		        .andExpect(status().isOk())
 		        .andExpect(content().string("Hello World"))
 		        .andReturn();
-		assertEquals("Hello World", result.getResponse().getContentAsString());
+		//assertEquals("Hello World", result.getResponse().getContentAsString());
 	}
 
 }
