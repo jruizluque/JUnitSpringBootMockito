@@ -12,7 +12,7 @@ import com.in28minutes.unittesting.unittesting.model.Item;
 public class ItemBusinessServiceImpl implements ItemBusinessService {
 
 	@Autowired
-	private ItemRepository repostory;
+	private ItemRepository repository;
 	
 	@Override
 	public Item returnHarcodedItem() {
@@ -21,7 +21,14 @@ public class ItemBusinessServiceImpl implements ItemBusinessService {
 
 	@Override
 	public List<Item> retrieveAllItems() {
-		return repostory.findAll();
+		
+		List<Item> items = repository.findAll();
+		
+		for(Item item : items) {
+			item.setValue(item.getPrice() * item.getQuantity());
+		}
+		
+		return items;
 	}
 	
 	
