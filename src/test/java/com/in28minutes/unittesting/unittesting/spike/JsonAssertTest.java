@@ -1,7 +1,5 @@
 package com.in28minutes.unittesting.unittesting.spike;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.json.JSONException;
 import org.junit.jupiter.api.Test;
 import org.skyscreamer.jsonassert.JSONAssert;
