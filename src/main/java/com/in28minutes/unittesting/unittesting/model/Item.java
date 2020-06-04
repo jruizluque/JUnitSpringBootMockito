@@ -16,6 +16,10 @@ public class Item {
 	@Transient
 	private int value;
 	
+	protected Item() {
+		// No arguments constructor needed due to JPA standards
+	}
+
 	public Item(int id, String name, int price, int quantity) {
 		this.id = id;
 		this.name = name;
