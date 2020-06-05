@@ -1,0 +1,4 @@
+Web = Controller
+Business (Logic) - Service
+Data (uses Entity) - Repository or DAO
+Model - Entities
